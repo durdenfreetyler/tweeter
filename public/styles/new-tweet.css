@@ -1,16 +1,17 @@
-section {
+.tweet-input {
   width: 90%;
   display: flex;
   flex-direction: column;
   background-color: rgb(231, 215, 215);
+  border: 3px solid;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.tweet-input:hover {
+  box-shadow: 5px 10px gray;
+  transition: box-shadow .3s;
+}
 
-}
-h2{
-
-}
-form{
-  
-}
 .label-text-area-box {
   display: flex;
   flex-direction: column;
