@@ -1,0 +1,39 @@
+nav{
+  position: fixed;
+  top: 0;
+  background-color: #4056A1;
+  color: #FFFFFF;
+height: 120px;
+padding: 1.5em;
+width: 100%;
+
+}
+#logo{
+  font-family: 'Bungee', cursive;
+}
+#nav-right-side{ 
+  
+}
+
+.nav-container{
+display: flex;
+justify-content: space-between;
+}
+
+.right-box{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+i{
+  color: red;
+}
+.header-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+} 
+.top-box{
+}
+.bottom-box{
+}

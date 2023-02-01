@@ -1,0 +1,26 @@
+article{
+display: flex;
+flex-direction: column;
+}
+
+header{
+border: 5px;
+border-color: coral;
+}
+
+footer{
+
+}
+
+#lower-tweet-container{
+
+
+}
+
+#user-icon{
+  max-width: 100%;
+  height: auto;
+
+  
+
+}

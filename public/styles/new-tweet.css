@@ -1,0 +1,46 @@
+section {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(231, 215, 215);
+
+}
+h2{
+
+}
+form{
+  
+}
+.label-text-area-box {
+  display: flex;
+  flex-direction: column;
+  margin: 35px;
+}
+.logo-character-box{
+  display: flex;
+  justify-content: space-between;
+  margin: 35px;
+}
+button{
+  background-color: #4056a1;
+  color: white;
+  font-family: 'Bungee', cursive;
+  
+}
+output{
+  font-family: 'Bungee', cursive;
+}
+#tweet-text{
+  width: 100%;
+  border-bottom:3px solid;
+  border-left: 0px;
+  border-right: 0px;
+  border-top: 0px;
+  background-color: rgb(231, 215, 215);
+}
+label{
+  flex-grow:4 ;
+}
+
+
+
