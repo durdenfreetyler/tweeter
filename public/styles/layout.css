@@ -1,26 +1,19 @@
 html {
-
   box-sizing: border-box;
-
 }
 
 *, *:before, *:after {
-
   box-sizing: inherit;
-
 }
 
 body {
-
   color: #545149;
   background-color: #f4f1ec;
   font-size: 24px;
   font-family: 'Source Sans Pro', sans-serif;
-
 }
 
 main {
-
   background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
   display: flex;
   align-items: center;
@@ -28,28 +21,21 @@ main {
   flex-direction: column;
   width: 90%;
   margin: 0 auto;
-
 }
 
 @media only screen and (min-width: 1024px) {
 
   body {
-
   padding-top: 120px;
   display: flex;
-
 }
 
   header.main-header {
-
   margin: 120px 10%;
-
 }
 
   main {
-
   margin-top: 120px;
-
 }
 
 }

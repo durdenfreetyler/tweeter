@@ -1,47 +1,36 @@
 .tweet-input {
-
   width: 97%;
   display: flex;
   flex-direction: column;
   padding: 10px;
   margin-bottom: 20px;
   word-break: break-word;
-  
 }
 
 .label-text-area-box {
-
   display: flex;
   flex-direction: column;
   margin: 35px;
   background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
-
 }
 
 .logo-character-box {
-
   display: flex;
   justify-content: space-between;
   margin: 35px;
-
 }
 
 button {
-
   background-color: #4056a1;
   color: white;
   font-family: 'Bungee', cursive;
-  
 }
 
 output {
- 
   font-family: 'Bungee', cursive; 
-
 }
 
-#tweet-text{
-
+#tweet-text {
   width: 100%;
   border-bottom:3px solid;
   border-left: 0px;
@@ -49,24 +38,18 @@ output {
   border-top: 0px;
   background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
   padding: 10px;
-  
 }
 
 label {
-
   flex-grow:4 ;
-
 }
 
 .error-icon {
-
   color:tomato !important;
-  
 }
 
 .error-empty,
 .error-length {
-
   display: none;
   border: 1px solid;
   margin: 10px 0px;
@@ -75,7 +58,6 @@ label {
   background-position: 10px center;
   color: tomato;
   background-color: #FFBABA;
-  
 }
 
 
