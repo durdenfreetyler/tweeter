@@ -22,16 +22,35 @@ body {
     font-family: 'Source Sans Pro', sans-serif;
 }
 main{
-  background-color: darkcyan;
+  /* background-color: darkcyan; */
     background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
     /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  width: 90%;
+  margin: 0 auto;
 }
 
+/* @media only screen and (min-width: 768px) {
+
+} */
+
+@media only screen and (min-width: 1024px){
+body {
+  padding-top: 120px;
+  display: flex;
+}
+header.main-header{
+ margin: 120px 10% 0;
+
+}
+main{
+  margin-top: 120px;
+}
+}
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
- */
+ */ 

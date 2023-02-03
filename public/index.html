@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Meta Information -->
     <title>Tweeter - Home Page</title>
 
@@ -32,6 +33,12 @@
     <link rel="stylesheet" href="/styles/tweet-container.css" />
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js"
+      integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
@@ -52,11 +59,11 @@
     <header class="main-header">
       <div class="top-box">
         <!-- <div class="middle-box"> -->
-        <img src="/images/profile-hex.png" />
+        <img src="/images/profile-hex.png" alt="profile-hex" />
       </div>
       <br />
       <div class="bottom-box">
-        <h2>Your Name</h2>
+        <h2>Abe</h2>
       </div>
     </header>
 
@@ -64,6 +71,14 @@
     <main class="container">
       <section class="tweet-input">
         <h2>Compose Tweet</h2>
+        <div class="error-empty">
+          <i class="fa-solid fa-triangle-exclamation error-icon"></i>
+          <div>Error: your Tweet is empty</div>
+        </div>
+        <div class="error-length">
+          <i class="fa-solid fa-triangle-exclamation error-icon"></i>
+          <div>Error: your Tweet is longer than 140 characters</div>
+        </div>
 
         <form method="POST" action="/tweets">
           <div class="label-text-area-box">
@@ -87,7 +102,7 @@
         </form>
       </section>
       <section id="tweets-container">
-        <article class="tweet-container">
+        <!-- <article class="tweet-container">
           <header class="tweet-header">
             <div class="left-header">
               <img
@@ -108,15 +123,18 @@
               <i class="fa-solid fa-flag"></i>
               <i class="fa-solid fa-retweet"></i>
               <i class="fa-solid fa-heart"></i>
-              <!-- <i class="fa-thin fa-flag-swallowtail"></i>
-              <i class="fa-light fa-recycle"></i>
-              <i class="fa-regular fa-heart"></i> -->
+             
             </div>
           </footer>
-        </article>
+        </article> -->
       </section>
     </main>
 
     <script src="scripts/composer-char-counter.js"></script>
   </body>
 </html>
+
+<!-- 1. Buld HTML and CSS Error section that looks like compass
+2. Hide the section by default
+3. In error jquery client find out how to add styles or classes to an element, 
+4. Can i show my error section when the validation if gets hit  -->
