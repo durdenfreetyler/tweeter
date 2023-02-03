@@ -2,23 +2,17 @@
 <html lang="en">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Meta Information -->
     <title>Tweeter - Home Page</title>
-
-    <!-- External CSS -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-      type="text/css"
-    />
+      type="text/css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+Pro:ital,wght@0,300;0,600;1,300;1,600&display=swap"
       rel="stylesheet"
     />
-
-    <!-- App CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
     <link
@@ -31,7 +25,6 @@
     <link rel="stylesheet" href="/styles/header.css" />
     <link rel="stylesheet" href="/styles/new-tweet.css" />
     <link rel="stylesheet" href="/styles/tweet-container.css" />
-    <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js"
@@ -40,12 +33,10 @@
       referrerpolicy="no-referrer"
     ></script>
 
-    <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
   </head>
 
   <body>
-    <!-- Top nav bar (fixed) -->
     <nav class="nav-container">
       <span id="logo">tweeter</span>
       <div class="right-box">
@@ -55,10 +46,8 @@
       </div>
     </nav>
 
-    <!-- header -->
     <header class="main-header">
       <div class="top-box">
-        <!-- <div class="middle-box"> -->
         <img src="/images/profile-hex.png" alt="profile-hex" />
       </div>
       <br />
@@ -67,7 +56,6 @@
       </div>
     </header>
 
-    <!-- Page-specific (main) content here -->
     <main class="container">
       <section class="tweet-input">
         <h2>Compose Tweet</h2>
@@ -100,7 +88,9 @@
             </div>
           </div>
         </form>
+
       </section>
+
       <section id="tweets-container">
         <!-- <article class="tweet-container">
           <header class="tweet-header">
@@ -123,18 +113,16 @@
               <i class="fa-solid fa-flag"></i>
               <i class="fa-solid fa-retweet"></i>
               <i class="fa-solid fa-heart"></i>
-             
             </div>
           </footer>
         </article> -->
       </section>
+
     </main>
 
     <script src="scripts/composer-char-counter.js"></script>
+
   </body>
+
 </html>
 
-<!-- 1. Buld HTML and CSS Error section that looks like compass
-2. Hide the section by default
-3. In error jquery client find out how to add styles or classes to an element, 
-4. Can i show my error section when the validation if gets hit  -->

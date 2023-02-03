@@ -1,56 +1,55 @@
-/*
- * http://www.paulirish.com/2012/box-sizing-border-box-ftw/
- * https://css-tricks.com/international-box-sizing-awareness-day/
- * Do not modify these two selectors, please
- */
 html {
+
   box-sizing: border-box;
-}
-*, *:before, *:after {
-  box-sizing: inherit;
+
 }
 
-/*
- * Global layout stuff
- */
+*, *:before, *:after {
+
+  box-sizing: inherit;
+
+}
 
 body {
+
   color: #545149;
   background-color: #f4f1ec;
   font-size: 24px;
-  /* font: font-family: 'Bungee', cursive; */
-    font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
+
 }
-main{
-  /* background-color: darkcyan; */
-    background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
-    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+
+main {
+
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   width: 90%;
   margin: 0 auto;
+
 }
 
-/* @media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
 
-} */
+  body {
 
-@media only screen and (min-width: 1024px){
-body {
   padding-top: 120px;
   display: flex;
-}
-header.main-header{
- margin: 120px 10% 0;
 
 }
-main{
+
+  header.main-header {
+
+  margin: 120px 10%;
+
+}
+
+  main {
+
   margin-top: 120px;
-}
+
 }
 
-/*
- * Additional CSS can be defined below or in other CSS files, as per instructions
- */ 
+}

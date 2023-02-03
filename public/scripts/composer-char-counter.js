@@ -3,18 +3,23 @@ $(document).ready(function () {
     const errorEmpty = $(".error-empty");
     const errorLength = $(".error-length");
     if (errorEmpty.is(":visible")) {
-      errorEmpty.slideUp();
+        errorEmpty.slideUp();
     }
+    
     if (errorLength.is(":visible")) {
-      errorLength.slideUp();
+        errorLength.slideUp();
     }
+
     let maxLength = 140;
     let length = $(this).val().length;
+    
     $(".counter").text(maxLength - length);
 
     if (length > maxLength) {
       $(".counter").css("color", "red");
-    } else {
+    }
+
+    else {
       $(".counter").css("color", "black");
     }
   });

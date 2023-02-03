@@ -1,49 +1,62 @@
-#tweets-container {
-  /* width: 100%; */
-}
+.tweet-container {
 
-.tweet-container{
-  /* background-color: rgb(231, 215, 215); */
   border: 3px solid;
   padding: 30px;
   margin-bottom: 20px;
 
 }
+
 .tweet-container:hover {
+
   box-shadow: 5px 10px gray;
-    transition: box-shadow .3s;
+  transition: box-shadow .3s;
+
 }
 
-.tweet-header{
-display: flex; 
-justify-content: space-between;
+.tweet-header {
+
+  display: flex; 
+  justify-content: space-between;
+
 }
 
 .left-header {
+
   display: flex;
   align-items: center;
+
 }
 
-.user-icon{
+.user-icon {
+
  height: 50px;
- /* width: 50px; */
  margin-right: 4px;
+
 }
+
 .tweet-footer {
+
   border-top: 3px solid;
   display: flex;
   justify-content: space-between;
+
 }
 
 .fa-solid:hover {
+
  color: rgb(223, 177, 27);
+
 }
 
 .fa-solid{
+
   color: rgb(25, 151, 151);
+
 }
 
 .tweet {
+
   padding: 10px;
+  
 }
 

@@ -1,11 +1,11 @@
-// const { response } = require("express");
-
 const escape = function (str) {
   let div = document.createElement("div");
-  div.appendChild(document.createTextNode(str));
-  return div.innerHTML;
+    div.appendChild(document.createTextNode(str));
+    return div.innerHTML;
 };
+
 const createTweetElement = function (tweetObject) {
+
   const $tweet = `<article class="tweet-container">
           <header class="tweet-header">
             <div class="left-header">
@@ -37,10 +37,9 @@ const createTweetElement = function (tweetObject) {
               </div>
               </footer>
               </article>`;
-  return $tweet;
+    return $tweet;
 };
 
-// Test / driver code (temporary). Eventually will get this from the server.
 const tweetData = {
   user: {
     name: "Newton",
@@ -52,32 +51,29 @@ const tweetData = {
   },
   created_at: 1461116232227,
 };
+
 const renderTweets = function (tweets) {
   $("#tweets-container").empty();
 
   tweets.forEach((tweet) => {
+
     const $tweet = createTweetElement(tweet);
 
     $("#tweets-container").prepend($tweet);
   });
 };
+
 const loadTweets = function () {
   $.ajax("/tweets", {
-    method: "GET",
-    success: (tweets, status) => {
+      method: "GET",
+      success: (tweets, status) => {
       console.log("Successfully loaded tweets:", tweets);
       renderTweets(tweets);
     },
   });
 };
 
-// const $tweet = createTweetElement(tweetData);
 $(document).ready(() => {
-  // $("#tweets-container").prepend($tweet);
-
-  // Test / driver code (temporary)
-  // console.log($tweet); // to see what it looks like
-
   $("form").submit(function (event) {
     event.preventDefault();
     const data = $("#tweet-text").serializeArray();
@@ -87,20 +83,23 @@ $(document).ready(() => {
     if (tweetText.length === 0) {
       $(".error-empty").removeAttr("display");
       $(".error-empty").slideDown("slow");
-    } else if (tweetText.length >= 140) {
+    }
+    
+    else if (tweetText.length >= 140) {
       $(".error-length").removeAttr("display");
       $(".error-length").slideDown("slow");
     }
+
     $.ajax("/tweets", {
-      method: "POST",
-      data,
-      success: (res, status) => {
-        $.ajax("/tweets", {
+          method: "POST",
+          data,
+          success: (res, status) => {
+          $.ajax("/tweets", {
           method: "GET",
           success: (tweets, status) => {
-            console.log("Successfully loaded tweets:", tweets);
-            renderTweets(tweets);
-          },
+          renderTweets(tweets);
+            },
+          
         });
 
         $("#tweet-text").val("");

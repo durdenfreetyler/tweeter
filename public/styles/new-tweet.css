@@ -1,58 +1,72 @@
 .tweet-input {
+
   width: 97%;
   display: flex;
   flex-direction: column;
-  /* background-color: rgb(231, 215, 215);
-  border: 3px solid; */
   padding: 10px;
   margin-bottom: 20px;
   word-break: break-word;
   
 }
-.tweet-input:hover {
-  /* box-shadow: 5px 10px gray;
-  transition: box-shadow .3s; */
-}
 
 .label-text-area-box {
+
   display: flex;
   flex-direction: column;
   margin: 35px;
-    background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+
 }
-.logo-character-box{
+
+.logo-character-box {
+
   display: flex;
   justify-content: space-between;
   margin: 35px;
+
 }
-button{
+
+button {
+
   background-color: #4056a1;
   color: white;
   font-family: 'Bungee', cursive;
   
 }
-output{
-  font-family: 'Bungee', cursive;
+
+output {
+ 
+  font-family: 'Bungee', cursive; 
+
 }
+
 #tweet-text{
+
   width: 100%;
   border-bottom:3px solid;
   border-left: 0px;
   border-right: 0px;
   border-top: 0px;
-  /* background-color: rgb(231, 215, 215); */
-    background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
-    padding: 10px;
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+  padding: 10px;
+  
 }
-label{
+
+label {
+
   flex-grow:4 ;
+
 }
-.error-icon{
+
+.error-icon {
+
   color:tomato !important;
   
 }
+
 .error-empty,
-.error-length{
+.error-length {
+
   display: none;
   border: 1px solid;
   margin: 10px 0px;
@@ -61,6 +75,7 @@ label{
   background-position: 10px center;
   color: tomato;
   background-color: #FFBABA;
+  
 }
 
 
